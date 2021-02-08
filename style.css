@@ -20,17 +20,45 @@ nav a {
 }
 
 #welcome-section {
-    margin-top: 40px;
-    padding: 40px;
-    
+    padding: 60px;
     height: 100vh;
     background-color: indianred;
+    text-align: center;
+}
+#welcome-section h1 {
+    font-size: 50px;
+}
+#welcome-section p {
+    font-size: 30px;
 }
 #projects {
-    margin-top: 40px;
+    
     padding: 40px;
     height: 100vh;
     background-color: rgb(244, 189, 189);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-tile {
+    background-color: lightblue;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.img-container {
+    width: 250px;
+    border: blue solid 2px;
+}
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
+.project-title, .project-link {
+    color: white;
+    text-align: center;
 }
 
 @media only screen and (min-width: 992px) {
